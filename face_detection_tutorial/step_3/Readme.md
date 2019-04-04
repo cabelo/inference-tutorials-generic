@@ -16,17 +16,17 @@ Welcome to Face Detection Tutorial Step 3.  Now that the application can detect 
 
 The Intel® Distribution of OpenVINO™ toolkit provides a pre-compiled model for estimating age and gender from an image of a face.  You can find it at:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/age-gender-recognition-retail-0013
+* /opt/intel/openvino/deployment_tools/intel_models/age-gender-recognition-retail-0013
 
    * Available model locations:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/age-gender-recognition-retail-0013/FP16/age-gender-recognition-retail-0013.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/age-gender-recognition-retail-0013/FP16/age-gender-recognition-retail-0013.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/age-gender-recognition-retail-0013/FP32/age-gender-recognition-retail-0013.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/age-gender-recognition-retail-0013/FP32/age-gender-recognition-retail-0013.xml
 
    * More details can be found at:
 
-      * file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/age-gender-recognition-retail-0013/description/age-gender-recognition-retail-0013.html
+      * file:///opt/intel/openvino/deployment_tools/intel_models/age-gender-recognition-retail-0013/description/age-gender-recognition-retail-0013.html
 
 The results it is capable of producing are shown in the summary below (for more details, see the descriptions HTML pages for each model): 
 
@@ -492,7 +492,7 @@ cd tutorials/inference-tutorials-generic/face_detection_tutorial/step_3
 3. The first step is to configure the build environment for the Intel® Distribution of OpenVINO™ toolkit by running the "setupvars.sh" script.
 
 ```bash
-source  /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source  /opt/intel/openvino/bin/setupvars.sh
 ```
 
 

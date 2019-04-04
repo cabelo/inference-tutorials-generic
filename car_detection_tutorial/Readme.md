@@ -232,14 +232,14 @@ In tutorial Steps 2 and 3 we will walkthrough the code that specifically integra
 
 More details on the Inference Engine can be found in the "Integrating Inference Engine into Your Application" section of the Inference Engine Development Guide [https://software.intel.com/inference-engine-devguide](https://software.intel.com/inference-engine-devguide)
 
-and the Inference Engine API documentation located at: /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
+and the Inference Engine API documentation located at: /opt/intel/openvino/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
 
 #### Setting Up Command Line to Use the OpenVINO™ Toolkit Executables and Libraries
 
 Whenever running the OpenVINO™ toolkit tools, compiling, or running the user application, always remember to source the script:
 
 ```Bash
-source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source /opt/intel/openvino/bin/setupvars.sh
 ```
 
 
@@ -289,7 +289,7 @@ Batch size refers to the number of input data to be inferred during a single inf
 
    * Before starting inference using the request object, set the actual batch size of inputs using InferenceEngine::InferRequest::SetBatch() function.
 
-   * Note: Dynamic Batching may not work on all models and devices.   For example, the vehicle detection models referenced by this tutorials cannot use Dynamic Batching.  Presently only CPU and GPU devices are supported when using models with supported layer types.  For more details, please see: /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/DynamicBatching.html
+   * Note: Dynamic Batching may not work on all models and devices.   For example, the vehicle detection models referenced by this tutorials cannot use Dynamic Batching.  Presently only CPU and GPU devices are supported when using models with supported layer types.  For more details, please see: /opt/intel/openvino/deployment_tools/documentation/docs/DynamicBatching.html
 
 ### How Does Batch Size Affect Performance and Latency?
 
@@ -355,9 +355,9 @@ When using the Inference Engine’s image pre-processing API, resizing and cropp
 
 For more information, please see:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
+* /opt/intel/openvino/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
 
-* /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/KnownIssuesLimitations.html
+* /opt/intel/openvino/deployment_tools/documentation/docs/KnownIssuesLimitations.html
 
 ### When to use OpenCV or the Inference Engine’s Image Pre-processing API
 

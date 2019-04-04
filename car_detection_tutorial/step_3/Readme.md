@@ -16,17 +16,17 @@ Welcome to Car Detection Tutorial Step 3.  Now that the application can detect v
 
 The Intel® Distribution of OpenVINO™ toolkit provides a pre-compiled model for inferring vehicle type and color from an image of a car.  You can find it at:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039
+* /opt/intel/openvino/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039
 
    * Available model locations:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/FP16/vehicle-attributes-recognition-barrier-0039.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/FP16/vehicle-attributes-recognition-barrier-0039.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/FP32/vehicle-attributes-recognition-barrier-0039.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/FP32/vehicle-attributes-recognition-barrier-0039.xml
 
    * More details can be found at:
 
-      * file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/description/vehicle-attributes-recognition-barrier-0039.html
+      * file:///opt/intel/openvino/deployment_tools/intel_models/vehicle-attributes-recognition-barrier-0039/description/vehicle-attributes-recognition-barrier-0039.html
 
 The results it is capable of producing are shown in the summary below (for more details, see the descriptions HTML pages for each model): 
 
@@ -560,7 +560,7 @@ cd tutorials/inference-tutorials-generic/car_detection_tutorial/step_3
 3. The first step is to configure the build environment for the Intel® Distribution of OpenVINO™ toolkit by sourcing the "setupvars.sh" script.
 
 ```bash
-source  /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source  /opt/intel/openvino/bin/setupvars.sh
 ```
 
 

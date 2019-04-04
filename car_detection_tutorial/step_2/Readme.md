@@ -18,17 +18,17 @@ Below, you can see a sample output showing the results, where a Region of Intere
 
 The Intel® Distribution of OpenVINO™ toolkit provides a pre-compiled model that has been trained to detect vehicles.  You can find it at:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-detection-adas-0002
+* /opt/intel/openvino/deployment_tools/intel_models/vehicle-detection-adas-0002
 
    * Available model locations are:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-detection-adas-0002/FP16/vehicle-detection-adas-0002.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/vehicle-detection-adas-0002/FP16/vehicle-detection-adas-0002.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-detection-adas-0002/FP32/vehicle-detection-adas-0002.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/vehicle-detection-adas-0002/FP32/vehicle-detection-adas-0002.xml
 
    * More details on the model can be found at:
 
-      * file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-detection-adas-0002/description/vehicle-detection-adas-0002.html
+      * file:///opt/intel/openvino/deployment_tools/intel_models/vehicle-detection-adas-0002/description/vehicle-detection-adas-0002.html
 
 <table>
   <tr>
@@ -208,7 +208,7 @@ In the samples themselves and the common libraries they use are many useful help
 
 ### Blob Conversion
 
-There will need to be a function that takes the input image and turns it into a "blob".  Which begs the question “What is a blob?”.  In short, a blob, specifically the class InferenceEngine::Blob, is the data container type used by the Inference Engine for holding input and output data.  To get data into the model, the image data will need to be converted from the OpenCV cv::Mat to an InferenceEngine::Blob.  For doing that there are the two helper functions, “matU8ToBlob” (copies data) and “wrapMat2Blob” (does not copy data) which are both located in the file   “\opt\intel\computer_vision_sdk\inference_engine\samples\common\samples\ocv_common.hpp“.
+There will need to be a function that takes the input image and turns it into a "blob".  Which begs the question “What is a blob?”.  In short, a blob, specifically the class InferenceEngine::Blob, is the data container type used by the Inference Engine for holding input and output data.  To get data into the model, the image data will need to be converted from the OpenCV cv::Mat to an InferenceEngine::Blob.  For doing that there are the two helper functions, “matU8ToBlob” (copies data) and “wrapMat2Blob” (does not copy data) which are both located in the file   “\opt\intel\openvino\inference_engine\samples\common\samples\ocv_common.hpp“.
 
 #### matU8ToBlob
 
@@ -1175,7 +1175,7 @@ cd tutorials/inference-tutorials-generic/car_detection_tutorial/step_2
 3. The first step is to configure the build environment for the Intel® Distribution of OpenVINO™ toolkit by sourcing the "setupvars.sh" script.
 
 ```bash
-source  /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source  /opt/intel/openvino/bin/setupvars.sh
 ```
 
 
@@ -1201,7 +1201,7 @@ make
 
    1. "-i \<input-image-or-video-file\>" to specify an input image or video file instead of using the USB camera by default
 
-   2. "-m \<model-xml-file\>"  to specify where to find the module.  For example: -m  /opt/intel/computer_vision_sdk/deployment_tools/intel_models/vehicle-detection-adas-0002/FP32/vehicle-detection-adas-0002.xml”
+   2. "-m \<model-xml-file\>"  to specify where to find the module.  For example: -m  /opt/intel/openvino/deployment_tools/intel_models/vehicle-detection-adas-0002/FP32/vehicle-detection-adas-0002.xml”
 
    3. That is a lot to type and keep straight, so to help make the model names shorter to type  and easier to read, let us use the helper script scripts/setupenv.sh that sets up shell variables we can use.  For reference, here are the contents of scripts/setupenv.sh:
 

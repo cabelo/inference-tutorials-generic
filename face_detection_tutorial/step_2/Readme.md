@@ -18,25 +18,25 @@ A sample output showing the results where a Region of Interest (ROI) box appears
 
 The Intel® Distribution of OpenVINO™ toolkit includes two pre-compiled face detection models located at:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-adas-0001
+* /opt/intel/openvino/deployment_tools/intel_models/face-detection-adas-0001
 
    * Available model locations:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-adas-0001/FP16/face-detection-adas-0001.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/face-detection-adas-0001/FP16/face-detection-adas-0001.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-adas-0001/FP32/face-detection-adas-0001.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/face-detection-adas-0001/FP32/face-detection-adas-0001.xml
 
-   * More detail may be found the Intel® Distribution of OpenVINO™ toolkit at:       file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-adas-0001/description/face-detection-adas-0001.html
+   * More detail may be found the Intel® Distribution of OpenVINO™ toolkit at:       file:///opt/intel/openvino/deployment_tools/intel_models/face-detection-adas-0001/description/face-detection-adas-0001.html
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-retail-0004
+* /opt/intel/openvino/deployment_tools/intel_models/face-detection-retail-0004
 
    * Available model locations:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-retail-0004/FP16/face-detection-retail-0004.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/face-detection-retail-0004/FP16/face-detection-retail-0004.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-retail-0004/FP32/face-detection-retail-0004.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/face-detection-retail-0004/FP32/face-detection-retail-0004.xml
 
-   * More detail may be found in the Intel® Distribution of OpenVINO™ toolkit at: file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-retail-0004/description/face-detection-retail-0004.html
+   * More detail may be found in the Intel® Distribution of OpenVINO™ toolkit at: file:///opt/intel/openvino/deployment_tools/intel_models/face-detection-retail-0004/description/face-detection-retail-0004.html
 
 Each model may be used to perform face detection, the difference is how complex each underlying model is for the results it is capable of producing as shown in the summary below (for more details, see the descriptions HTML pages for each model): 
 
@@ -217,7 +217,7 @@ From Tutorial Step 1, we have the base application that can read and display ima
 
 ## Helper Functions and Classes
 
-There will need to be a function that takes the input image and turns it into a "blob".  Which begs the question “What is a blob?”  In short, a blob, specifically the class InferenceEngine::Blob, is the data container type used by the Inference Engine for holding input and output data.  To get data into the model, the image data will need to be converted from the OpenCV cv::Mat to an InferenceEngine::Blob.  For doing that is the helper function “matU8ToBlob” in \opt\intel\computer_vision_sdk\inference_engine\samples\common\samples\ocv_common.hpp: 
+There will need to be a function that takes the input image and turns it into a "blob".  Which begs the question “What is a blob?”  In short, a blob, specifically the class InferenceEngine::Blob, is the data container type used by the Inference Engine for holding input and output data.  To get data into the model, the image data will need to be converted from the OpenCV cv::Mat to an InferenceEngine::Blob.  For doing that is the helper function “matU8ToBlob” in \opt\intel\openvino\inference_engine\samples\common\samples\ocv_common.hpp: 
 
 ### matU8ToBlob
 
@@ -927,7 +927,7 @@ cd tutorials/inference-tutorials-generic/face_detection_tutorial/step_2
 3. The first step is to configure the build environment for the Intel® Distribution of OpenVINO™ toolkit by sourcing the "setupvars.sh" script.
 
 ```bash
-source  /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source  /opt/intel/openvino/bin/setupvars.sh
 ```
 
 
@@ -953,7 +953,7 @@ make
 
    1. "-i \<input-image-or-video-file\>" to specify an input image or video file instead of using the USB camera by default
 
-   2. "-m \<model-xml-file\>"  to specify where to find the module.  For example: -m  /opt/intel/computer_vision_sdk/deployment_tools/intel_models/face-detection-adas-0001/FP32/face-detection-adas-0001.xml”
+   2. "-m \<model-xml-file\>"  to specify where to find the module.  For example: -m  /opt/intel/openvino/deployment_tools/intel_models/face-detection-adas-0001/FP32/face-detection-adas-0001.xml”
 
    3. That is a lot to type and keep straight, so to help make the model names shorter to type  and easier to read, let us use the helper script scripts/setupenv.sh that sets up shell variables we can use.  For reference, here are the contents of scripts/setupenv.sh:
 

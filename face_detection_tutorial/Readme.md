@@ -232,14 +232,14 @@ In tutorial Steps 2, 3, and 4 we will walkthrough the code that specifically int
 
 More details on the Inference Engine can be found in the "Integrating Inference Engine into Your Application" section of the Inference Engine Development Guide [https://software.intel.com/inference-engine-devguide](https://software.intel.com/inference-engine-devguide)
 
-and the Inference Engine API documentation located at: /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
+and the Inference Engine API documentation located at: /opt/intel/openvino/deployment_tools/documentation/docs/IntegrateIEInAppNewAPI.html
 
 #### Setting Up Command Line to Use the Intel® Distribution of OpenVINO™ toolkit Executables and Libraries
 
 Whenever running the Intel® Distribution of OpenVINO™ toolkit tools, compiling, or running the user application, always remember to source the script:
 
 ```Bash
-source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source /opt/intel/openvino/bin/setupvars.sh
 ```
 
 
@@ -263,11 +263,11 @@ Additional information may be found at:
 
 Source for the OpenCV libraries: [https://github.com/opencv/opencv/releases/tag/3.4.1-cvsdk](https://github.com/opencv/opencv/releases/tag/3.4.1-cvsdk)
 
-Samples for OpenCV on Linux*: /opt/intel/computer_vision_sdk/opencv/share/OpenCV/sample/Readme.md
+Samples for OpenCV on Linux*: /opt/intel/openvino/opencv/share/OpenCV/sample/Readme.md
 
 Intel® OpenCV PVL library sample on Linux*:
 
-/opt/intel/computer_vision_sdk/opencv/share/OpenCV/sample/pvl
+/opt/intel/openvino/opencv/share/OpenCV/sample/pvl
 
 ## Floating Point Precision
 
@@ -344,7 +344,7 @@ Batch size refers to the number of input data to be inferred during a single inf
 
    * May be set explicitly using the Inference Engine API setBatchSize() function
 
-   * **Note**: For the getBatchSize() and setBatchSize() functions, see the InferenceEngine::ICNNNetwork class in the documentation at: /opt/intel/computer_vision_sdk/deployment_tools/documentation/docs/classInferenceEngine_1_1CNNNetwork.html
+   * **Note**: For the getBatchSize() and setBatchSize() functions, see the InferenceEngine::ICNNNetwork class in the documentation at: /opt/intel/openvino/deployment_tools/documentation/docs/classInferenceEngine_1_1CNNNetwork.html
 
 * Batch size is a fixed number of inputs that will be inferred for each submitted request to the Inference Engine API regardless of how many inputs contain valid data.  Depending upon the model, invalid inputs may also result in false detections and additional unnecessary processing.
 

@@ -18,17 +18,17 @@ In the image above, the three axes intersect in the center of the head.  The blu
 
 The Intel® Distribution of Intel® Distribution of OpenVINO™ toolkit includes a pre-compiled model for estimating head pose from an image of a face.  You can find it at:
 
-* /opt/intel/computer_vision_sdk/deployment_tools/intel_models/head-pose-estimation-adas-0001
+* /opt/intel/openvino/deployment_tools/intel_models/head-pose-estimation-adas-0001
 
    * Available model locations:
 
-      * FP16: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001.xml
+      * FP16: /opt/intel/openvino/deployment_tools/intel_models/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001.xml
 
-      * FP32: /opt/intel/computer_vision_sdk/deployment_tools/intel_models/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml
+      * FP32: /opt/intel/openvino/deployment_tools/intel_models/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml
 
    * More details can be found at:
 
-      * file:///opt/intel/computer_vision_sdk/deployment_tools/intel_models/head-pose-estimation-adas-0001/description/head-pose-estimation-adas-0001.html
+      * file:///opt/intel/openvino/deployment_tools/intel_models/head-pose-estimation-adas-0001/description/head-pose-estimation-adas-0001.html
 
 The results it is capable of producing are shown in the summary below (for more details, see the descriptions HTML pages for each model): 
 
@@ -478,7 +478,7 @@ cd tutorials/inference-tutorials-generic/face_detection_tutorial/step_4
 3. The first step is to configure the build environment for the Intel® Distribution of OpenVINO™ toolkit by running the "setupvars.sh" script.
 
 ```bash
-source  /opt/intel/computer_vision_sdk/bin/setupvars.sh
+source  /opt/intel/openvino/bin/setupvars.sh
 ```
 
 
